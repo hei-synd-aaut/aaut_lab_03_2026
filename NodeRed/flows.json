@@ -1,5 +1,13 @@
 [
     {
+        "id": "9f43651d27666c07",
+        "type": "tab",
+        "label": "sandbox",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "155f3371898c6d1b",
         "type": "tab",
         "label": "3D Robot",
@@ -51,14 +59,6 @@
         "id": "2c31763846faff4a",
         "type": "tab",
         "label": "Learning Alarms",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "9f43651d27666c07",
-        "type": "tab",
-        "label": "sandbox",
         "disabled": false,
         "info": "",
         "env": []
@@ -972,35 +972,6 @@
         "h": 302
     },
     {
-        "id": "e4bb8adf906ca572",
-        "type": "group",
-        "z": "9f43651d27666c07",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "b5effce.db9fd",
-            "64d6212b.ba6cd",
-            "226bf82.26e5e88",
-            "efa89bd3d50d6f25",
-            "fe71957d19a64838",
-            "acf520c254baa0a3",
-            "b1e6a763c9078a68",
-            "bae814aaa425b6d5",
-            "7c42697278cbbfbf"
-        ],
-        "x": 14,
-        "y": 19,
-        "w": 872,
-        "h": 322
-    },
-    {
         "id": "868084a294db2515",
         "type": "group",
         "z": "155f3371898c6d1b",
@@ -1071,6 +1042,35 @@
         "y": 539,
         "w": 952,
         "h": 82
+    },
+    {
+        "id": "e4bb8adf906ca572",
+        "type": "group",
+        "z": "016306c2d57be25e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b5effce.db9fd",
+            "64d6212b.ba6cd",
+            "226bf82.26e5e88",
+            "efa89bd3d50d6f25",
+            "fe71957d19a64838",
+            "acf520c254baa0a3",
+            "b1e6a763c9078a68",
+            "bae814aaa425b6d5",
+            "7c42697278cbbfbf"
+        ],
+        "x": 34,
+        "y": 1199,
+        "w": 872,
+        "h": 322
     },
     {
         "id": "8966a7b403a8fb88",
@@ -1550,6 +1550,179 @@
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
+    },
+    {
+        "id": "8a2554b62beaa6b6",
+        "type": "ui-page",
+        "name": "OPC UA hands-on",
+        "ui": "926d3079c9560d19",
+        "path": "/OpcUaHandsOn",
+        "icon": "connection",
+        "layout": "notebook",
+        "theme": "8966a7b403a8fb88",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0eb3435dacda75d6",
+        "type": "OpcUa-Endpoint",
+        "name": "OPC UA CtrlX",
+        "endpoint": "opc.tcp://192.168.1.111:4840",
+        "secpol": "Basic256Sha256",
+        "secmode": "SignAndEncrypt",
+        "none": false,
+        "login": true,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "bbd421837d8a8be1",
+        "type": "OpcUa-Client",
+        "z": "9f43651d27666c07",
+        "endpoint": "0eb3435dacda75d6",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2a3218ee0966aa1e",
+        "type": "inject",
+        "z": "9f43651d27666c07",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "bbd421837d8a8be1"
+            ]
+        ]
+    },
+    {
+        "id": "9c4be65c7ebd2742",
+        "type": "OpcUa-Item",
+        "z": "9f43651d27666c07",
+        "item": "plc/app/Application/sym/PackTag/hevsPackTime/Date_and_time_string",
+        "datatype": "String",
+        "value": "",
+        "name": "",
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "e5aad40779445198"
+            ]
+        ]
+    },
+    {
+        "id": "021dab7fc0e071cd",
+        "type": "inject",
+        "z": "9f43651d27666c07",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 320,
+        "wires": [
+            [
+                "9c4be65c7ebd2742"
+            ]
+        ]
+    },
+    {
+        "id": "e5aad40779445198",
+        "type": "debug",
+        "z": "9f43651d27666c07",
+        "name": "OPC UA Item",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 320,
+        "wires": []
     },
     {
         "id": "3b9ce7c81b0617b4",
@@ -8202,6 +8375,217 @@
         "wires": []
     },
     {
+        "id": "b5effce.db9fd",
+        "type": "comment",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "name": "Example: Confirm all pending errors in the system diagnostic",
+        "info": "",
+        "x": 280,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "64d6212b.ba6cd",
+        "type": "ctrlx-datalayer-request",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "device": "e45e312c80fc001e",
+        "method": "WRITE",
+        "path": "diagnosis/confirm/all-errors",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": "",
+        "pendingErrorLevel": "",
+        "x": 740,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "226bf82.26e5e88",
+        "type": "inject",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "name": "Manual Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1360,
+        "wires": [
+            [
+                "efa89bd3d50d6f25"
+            ]
+        ]
+    },
+    {
+        "id": "efa89bd3d50d6f25",
+        "type": "function",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "name": "make confirm errors",
+        "func": "msg.payload = null;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1360,
+        "wires": [
+            [
+                "64d6212b.ba6cd"
+            ]
+        ]
+    },
+    {
+        "id": "fe71957d19a64838",
+        "type": "ctrlx-datalayer-request",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "device": "e45e312c80fc001e",
+        "method": "READ",
+        "path": "diagnosis/get/actual/list/amount-errors",
+        "payloadFormat": "value_type",
+        "name": "",
+        "pendingWarnLevel": 50,
+        "pendingErrorLevel": 100,
+        "x": 430,
+        "y": 1420,
+        "wires": [
+            [
+                "acf520c254baa0a3",
+                "bae814aaa425b6d5"
+            ]
+        ]
+    },
+    {
+        "id": "acf520c254baa0a3",
+        "type": "debug",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "name": "Amount Errors",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "b1e6a763c9078a68",
+        "type": "inject",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 1420,
+        "wires": [
+            [
+                "fe71957d19a64838"
+            ]
+        ]
+    },
+    {
+        "id": "bae814aaa425b6d5",
+        "type": "ui-text",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "group": "0c5334f206f53e1e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pending errors: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 780,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "7c42697278cbbfbf",
+        "type": "ui-button",
+        "z": "016306c2d57be25e",
+        "g": "e4bb8adf906ca572",
+        "group": "0c5334f206f53e1e",
+        "name": "",
+        "label": "Try to reset errors",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 1300,
+        "wires": [
+            [
+                "efa89bd3d50d6f25"
+            ]
+        ]
+    },
+    {
         "id": "662d744927a7778b",
         "type": "inject",
         "z": "ab5dcf8839791074",
@@ -9524,7 +9908,7 @@
         "z": "2c31763846faff4a",
         "group": "6b2222aa7324c02b",
         "name": "",
-        "order": 3,
+        "order": 1,
         "width": 0,
         "height": 0,
         "content": "## Dynamic info\n\nCourse AutB\n\nAuthor: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)\n\n# LAB 06 Pack & PLCopen\n[Die deutsche Version ist hier verfügbar:](README_DE.md)\n\n## Version\n-  CtrlX PLC: 2.6.7\n-  Node RED : 4.0.5\n-  @flowfuse/node-red-dashboard: 1.24.2\n-  node-red-contrib-ctrlx-automation: 1.9.8\n\n## Objectif du travail pratique\n-   [ ] Utiliser des Function Block du type PLCopen dans un contexte PackML\n-   [ ] Implémenter des alarmes et des warnings pour surveiller le système.\n\n## Règles de codage\n-   Vous devez travailler uniquement dans **PRG_Student**.\n-   **PRG_Student** est un module parmi d'autres.\n-   Les modules d'axes servent à gérer la mise sous couple des moteurs et inversement vous n'avez pas à le faire.\n-  Un bref aperçu de [FB_Stop](MC_MoveAbsolute_AND_MC_Stop.md) et [FB_MoveAbsolute](MC_MoveAbsolute_AND_MC_Stop.md).\n-  [Documentation](#documentation).\n\n### Sécurité\nL'axe Z est prévu pour remonter pendant la phase de Resetting afin d'éviter les risques de Crash.\n\nIl sert d'exemple: **FB_ModuleAxis_Z** utilise **ACT_Resetting**\n```iecst\n(*\n\tManage Resetting\n*)\nIF actualState = E_PackState.eResetting THEN\n   // Set to TRUE if no action requested\n   CASE axisResetting OF\n      E_AxisResetting.eIdle :\n         // For Z axis, position 0 is safe\n         mcMoveAbs.Position := 0;\n         axisResetting := E_AxisResetting.eMotionResetPos;\n\t\t\n      E_AxisResetting.eMotionResetPos :\n         IF mcMoveAbs.Done THEN\n            axisResetting := E_AxisResetting.eMotionIdleDone;\n         ELSIF mcMoveAbs.Error THEN\n            axisResetting := E_AxisResetting.eMotionIdleError;\n         END_IF\n      E_AxisResetting.eMotionIdleDone :\n         // Do Nothing, SC\n         ;\n      E_AxisResetting.eMotionIdleError :\n         // Do nothing, wait for debug\n         ;\t\t\n   END_CASE\n\t\n   stActing.Resetting_SC := (axisResetting = E_AxisResetting.eMotionIdleDone);\nELSE\n   axisResetting := E_AxisResetting.eIdle;\t\n   stActing.Resetting_SC := FALSE;\nEND_IF\n\n```\n\nLe FB mcMoveAbs est appelé en dehors de la State Machine afin d'être toujours appelé et ne pas rester dans un état indéterminé.\n\n```iecst\nmcMoveAbs.Execute := (axisResetting = E_AxisResetting.eMotionResetPos);\nmcMoveAbs(Position := 100,\n          Velocity := 0.1,\n          Acceleration := 1,\n          Deceleration := 1);\n\n```\n\nVous pouvez réutiliser le même FB ``MC_MoveAbsolute``, mais en utilisant une nouvelle instance, par exemple: ``mcMyMove``.\n\n### Etat réservé\nL'état Execute en mode Manuel est réservé pour une activité de jog.\nVous pouvez utiliser les autres état et modes.\n\n### Principe PackML HEVS\nLe Pack façon HEVS gère automatiquement les états.\n**ACT_PackManager** et réservé pour la gestion du module.\n\nVous ne codez que dans les actions des états qui sont nécessaire, principalement dans **Pack_Execute**. \n\n\n### Implémentation des alarmes et des warnings\nVous appelez vos Warnings et Alarms dans **ACT_WarningAndAlarms**. Voir ci-dessous dans [documentation](#documentation) les exemples de code.\n\n### A propos du Gripper\nLe gripper est programmé pour être pilotable manuellement, sauf dans les conditions suivantes:\n\n```iecst\nIF NOT ((PackTag.hevsUI.uiStateExecute AND (PackTag.Status.UnitModeCurrent = E_PackModes.Production)) OR\n         PackTag.hevsUI.uiStateClearing  OR\n         PackTag.hevsUI.uiStateResetting)    THEN\n\tfbOpenGripper.Execute := stTestFbGripperHmi.openGripper;\n\tfbCloseGripper.Execute := stTestFbGripperHmi.closeGripper;\t\nEND_IF\n\n```\nCe qui signifie que les deux Function Blocks peuvent être utilisés dans tous les autres états.\n\n\n## URS User Request Specification\n\n\n|URS ID |Specification|\n|-------|-------------|\n|0. |Starting|\n|0.1   |Dans cet état, les axes X et Z vont se positionner aux positions **X = -100** et **Z = 100**.|\n|0.2   |Quand les deux axes sont en position, on passe en Execute.|\n|1. |**Execute**|\n|1.1 |Les axes X et Z doivent se déplacer selon le tableau et [dessin ci-dessous](#details-for-square).|\n|1.2. |On peut varier la vitesse, l'accélération et le jerk depuis le HMI.|\n|1.3. |Le gripper est activé selon le [tableau ci-dessous](#details-for-square).|\n|1.4. |Le mouvement continue en boucle, 1-2-3-5-1...|\n|2. |**Hold**|\n|2.1 |Si on appuie sur le bouton Hold du HMI Node-RED, les axes sont stoppés immédiatement avec le FB_Stop.|\n|2.2 |Si on appuie sur le bouton Unhold du HMI Node-RED, le système recommence la séquence Execute.|\n|3. |**Suspend**|\n|3.1. |Après 3 cycles de mouvements, le programme passe en Suspended pendant 3 secondes, puis recommence pour 3 cycles supplémentaire et ainsi de suite.|\n|3.2. |L'action Suspended doit être activée par une **alarme** de niveau Suspend.|\n|4. |**Warnings**|\n|4.1. |En Aborted, on indique qu'il faut un clearing pour démarrer.|\n|4.2. |En Stopped, on indique qu'il faut un reset pour démarrer.|\n|4.3. |En Held, on indique qu'il faut un unhold pour démarrer.|\n|5. |**Alarm Gripper**|\n|5.1 |Si on coupe l'air comprimé et que le gripper ne se ferme pas, on génère une alarme de niveau Stoppe avec un message.|\n|5.2 |Si on coupe l'air comprimé et que le gripper ne s'ouvre pas, on génère une alarme de niveau Stoppe avec un message.|\n\n\n### Complément\nOn peut aussi tester Complete qui devrait pouvoir repartir en resetting avec un Reset.\n\n\n### Details for Square\n\n|Id |Move To Position X|M.T.P Z |Action      |Delay [ms] |Next Id|\n|---|------------------|--------|------------|-----------|-------|\n|1  |0                 |50      |eOpen       |500        |2      |\n|2  |0                 |-50       |eClose      |0          |3      |\n|3  |100               |-50       |eOpen       |0          |4      |\n|4  |100               |50      |eClose      |0          |1      |\n|1  |0                 |50      |eOpen       |500        |2      |\n\n-  Velocity_m_s        := 0.05;\n-  Acceleleration_m_s2 := 1;\n-  Jerk_m_s3           := 10;\n\n<div style=\"text-align: center;\">\n<figure>\n    <img src=\"./img/DriveSquare.png\"\n         alt=\"Image Lost DriveSquare\">\n    <figcaption>2D motion with a square</figcaption>\n</figure>\n</div>\n\n\n## Documentation\n\n-   [For Gripper Function Blocks online](FB_Gripper.md)\n-   [HEVS PackTag User Interface](HEVS_PackTag_UI.md)\n-   [HEVS Alarms](FB_HEVS_SetAlarm.md)\n-   [HEVS Warnings](FB_HEVS_SetWarning.md)\n-   [MC_Stop & MC_MoveAbsolute](MC_MoveAbsolute_AND_MC_Stop.md)\n\n\n### About Programs\n\nIn cltrX PLC Engineering\n\nFunction blocks for robot are in **HEVS_Robot**.\n\nManual motions are set in **HEVS_UnitBox** -> **PRG_Process**.\n\n**PRG_Student** is called in **PRG_Process**.\n\n#### About SC State Complete\nThe synthesis of modules for the process/Unit are here in **ACT_Build_Pack_SC** of the program **PRG_Process**.\n\n```iecst\n(*\n\tThis section should group all EM and CM State Complete\n\tThis Unit_SC is used by PLC_PACK to manager\n\tStates SC\n*)\nxProcess_SC := fbModuleAxis_X.SC AND\n\t\t       fbModuleAxis_Y.SC AND\n\t\t       fbModuleAxis_Z.SC AND\n               PRG_Student.SC;\n```\n\n#### In the task manager\nOnly one program is in the task manager it calls all other programs of the Unit Box. PRG_UnitBox.\n\n```iecst\n(*\n\tCheck and init program\n*)\nuliLoopUnitBox := uliLoopUnitBox + 1;\nIF NOT xInitUnitBox THEN\n\txInitUnitBox := TRUE;\nEND_IF\n\n(*\n\tMap program\n\tSpecific to this hardware.\n\tMainly access to IO via Profinet and S7-1500\n*)\nPRG_MapBox();\n\n(*\n\tDevice Manager\n\tProcessing of hardware values.\n\tMay include alarms if devices not included in process\n\tIdeally, Alarms should be only part of EM and CM in PRG_Process \n*)\nPRG_DeviceManager();\n\n(*\n\tTools for processing\n\tInclude\n\t\tPack States and Modes\n\t\tAlarms\n\t\tDate and Time\n*)\nPLC_PACK();\nPRG_TestAlarm();\nPRG_GetTime_CtrlX();\n\n(*\n\tProcess\n\tManagement of Unit, EM and CM if any\n*)\nPRG_Process();\n```",
@@ -10743,338 +11127,6 @@
         "pendingErrorLevel": 100,
         "x": 980,
         "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b5effce.db9fd",
-        "type": "comment",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "name": "Example: Confirm all pending errors in the system diagnostic",
-        "info": "",
-        "x": 260,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "64d6212b.ba6cd",
-        "type": "ctrlx-datalayer-request",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "device": "e45e312c80fc001e",
-        "method": "WRITE",
-        "path": "diagnosis/confirm/all-errors",
-        "payloadFormat": "value_type",
-        "name": "",
-        "pendingWarnLevel": "",
-        "pendingErrorLevel": "",
-        "x": 720,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "226bf82.26e5e88",
-        "type": "inject",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "name": "Manual Trigger",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 180,
-        "wires": [
-            [
-                "efa89bd3d50d6f25"
-            ]
-        ]
-    },
-    {
-        "id": "efa89bd3d50d6f25",
-        "type": "function",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "name": "make confirm errors",
-        "func": "msg.payload = null;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 180,
-        "wires": [
-            [
-                "64d6212b.ba6cd"
-            ]
-        ]
-    },
-    {
-        "id": "fe71957d19a64838",
-        "type": "ctrlx-datalayer-request",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "device": "e45e312c80fc001e",
-        "method": "READ",
-        "path": "diagnosis/get/actual/list/amount-errors",
-        "payloadFormat": "value_type",
-        "name": "",
-        "pendingWarnLevel": 50,
-        "pendingErrorLevel": 100,
-        "x": 410,
-        "y": 240,
-        "wires": [
-            [
-                "acf520c254baa0a3",
-                "bae814aaa425b6d5"
-            ]
-        ]
-    },
-    {
-        "id": "acf520c254baa0a3",
-        "type": "debug",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "name": "Amount Errors",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "b1e6a763c9078a68",
-        "type": "inject",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 240,
-        "wires": [
-            [
-                "fe71957d19a64838"
-            ]
-        ]
-    },
-    {
-        "id": "bae814aaa425b6d5",
-        "type": "ui-text",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "group": "0c5334f206f53e1e",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Pending errors: ",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "wrapText": false,
-        "className": "",
-        "x": 760,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "7c42697278cbbfbf",
-        "type": "ui-button",
-        "z": "9f43651d27666c07",
-        "g": "e4bb8adf906ca572",
-        "group": "0c5334f206f53e1e",
-        "name": "",
-        "label": "Try to reset errors",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 130,
-        "y": 120,
-        "wires": [
-            [
-                "efa89bd3d50d6f25"
-            ]
-        ]
-    },
-    {
-        "id": "cfc4215ad7fa953e",
-        "type": "ui-button",
-        "z": "9f43651d27666c07",
-        "group": "6b2222aa7324c02b",
-        "name": "Populate data",
-        "label": "Populate Data",
-        "order": 2,
-        "width": "3",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "green",
-        "textColor": "white",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 120,
-        "y": 400,
-        "wires": [
-            [
-                "656c2a7b2e3ec980"
-            ]
-        ]
-    },
-    {
-        "id": "656c2a7b2e3ec980",
-        "type": "function",
-        "z": "9f43651d27666c07",
-        "name": "Populate data function",
-        "func": "msg.payload = {\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john.doe@mail.com\",\n    \"phone\": \"+01-234-5678\"\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 400,
-        "wires": [
-            [
-                "160fd5c161f485a1"
-            ]
-        ]
-    },
-    {
-        "id": "160fd5c161f485a1",
-        "type": "ui-form",
-        "z": "9f43651d27666c07",
-        "name": "",
-        "group": "6b2222aa7324c02b",
-        "label": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "First Name",
-                "key": "first_name",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Last Name",
-                "key": "last_name",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Email",
-                "key": "email",
-                "type": "text",
-                "required": false,
-                "rows": null
-            },
-            {
-                "label": "Phone",
-                "key": "phone",
-                "type": "text",
-                "required": false,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "first_name": "",
-            "last_name": "",
-            "email": "",
-            "phone": ""
-        },
-        "payload": "",
-        "submit": "Submit",
-        "cancel": "Clear",
-        "resetOnSubmit": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": true,
-        "className": "",
-        "passthru": false,
-        "dropdownOptions": [],
-        "x": 550,
-        "y": 400,
         "wires": [
             []
         ]

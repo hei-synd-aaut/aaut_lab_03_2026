@@ -60,6 +60,20 @@ Unit *-- Equipment Module
 
 :bulb: Equipment modules may execute equipment phases but they do not have the capability of executing higher level procedural elements.
 
-In this lab, we suppose that we want to control diretctly the Equipment Modules using OPC-UA. To test the functionalities, we will use Node-RED with the 
+In this lab, we suppose that we want to control diretctly the Equipment Modules using OPC-UA. To test the functionalities, we will use Node-RED with the [node-red-contrib-opcua palette](https://flows.nodered.org/node/node-red-contrib-opcua).
+
+### List of methods for the robot
+
+- Methods include positions in X,Y,Z, velocity, acceleration and jerk.
+- Methods include Pick with nest number.
+- Methods inclue Place with nest number.
+- Method for the Gripper.
+
+Read positions
+Write a single parameter
+Read a structure
+Write a structure
+
+Store / Restore.
 
 <!-- End of file>
