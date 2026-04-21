@@ -7,8 +7,20 @@
 
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
+required : UA Expert client
+
+# Base
+This lab is based on [Rob AAut, see this repo for details](https://github.com/hei-synd-aaut/rob_lab_01_2026).
 
 # Controlling equipment via OPC-UA
+
+:warning: <b style='color:red;'>Using OPC-UA, you will have to enter manually velocity and acceleration, be carfull with that</b>
+
+- X Range about -250 to 250 [mm]
+- Y Range about -150 to 150 [mm]
+- Z Range about -100 to 100 [mm]
+- Velocity: about 0.1 [m/s]
+- Acceleration: about 1 [m/s2]
 
 ## Preamble
 This lab was developped for a robotic lab with camera calibration using a QR-Code. Most of the files on this repository are not directly dedicated to this lab. See [Robotics for details](./Robotics).
@@ -75,5 +87,28 @@ Read a structure
 Write a structure
 
 Store / Restore.
+
+## About Set Get
+Try to use OPC UA to read/write attribute.
+
+With 
+
+```iecst
+{attribute 'monitoring':= 'variable'}
+PROPERTY Group_Disabled : BOOL
+```
+
+With
+
+```iecst
+{attribute 'monitoring':= 'call'}
+PROPERTY Group_Disabled : BOOL
+```
+
+## About WSTRING
+What does WSTRING means ?
+
+Can you display that ``안녕하세요`` in your OPC-UA Test Tool ?
+And with Node-RED ?
 
 <!-- End of file>

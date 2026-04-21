@@ -1,0 +1,3059 @@
+[
+    {
+        "id": "05c339ca4c7778d6",
+        "type": "tab",
+        "label": "OPC UA Browser",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6cbf8c4120244dc9",
+        "type": "tab",
+        "label": "Read UA",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "22bb27a829b5f023",
+        "type": "tab",
+        "label": "Subscribe",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "86eda314994bb24e",
+        "type": "tab",
+        "label": "Write",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aace168b2efa4b3d",
+        "type": "tab",
+        "label": "Method",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3df32596d77a5f7b",
+        "type": "subflow",
+        "name": "My inc counter",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "8e2307f08bde8bae"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 600,
+                "y": 40,
+                "wires": [
+                    {
+                        "id": "8e2307f08bde8bae",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "incStep",
+                "type": "num",
+                "value": "",
+                "ui": {
+                    "label": {
+                        "en-US": "Inc Step"
+                    },
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "num"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "48e3e09007aa5530",
+        "type": "group",
+        "z": "3df32596d77a5f7b",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8e2307f08bde8bae",
+            "c997532e1b83d3c0"
+        ],
+        "x": 54,
+        "y": 119,
+        "w": 292,
+        "h": 122
+    },
+    {
+        "id": "0b4df930ec627d8f",
+        "type": "group",
+        "z": "05c339ca4c7778d6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e0680b0c62f39598",
+            "bcb078325b195d90",
+            "9419b03d12cb4611",
+            "eaa02bca4c80887a",
+            "737e57e0e62a6b0b"
+        ],
+        "x": 54,
+        "y": 159,
+        "w": 632,
+        "h": 182
+    },
+    {
+        "id": "76d9212ce781f902",
+        "type": "group",
+        "z": "05c339ca4c7778d6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "734196bf20174157",
+            "331170ee32c671c1",
+            "bbd14c6c4fb49b81",
+            "e0b6957aa56bd297",
+            "9ecf1bd6efeb903d"
+        ],
+        "x": 54,
+        "y": 359,
+        "w": 632,
+        "h": 182
+    },
+    {
+        "id": "ccab6c726277e819",
+        "type": "group",
+        "z": "05c339ca4c7778d6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1f4f0612d03e75f2",
+            "6c7be5ee96b40cba",
+            "b3dd8f60b1f58135",
+            "d71f8868427e4520",
+            "c3d0b96b8a29736a"
+        ],
+        "x": 54,
+        "y": 579,
+        "w": 712,
+        "h": 182
+    },
+    {
+        "id": "093368e992ef3423",
+        "type": "group",
+        "z": "05c339ca4c7778d6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "82a7830a2dd1e30a",
+            "842693c30f18b47a",
+            "14cdd6aea1cf2f2d",
+            "7bbda2e3ca85cf3f",
+            "77baa8e4a752bb75"
+        ],
+        "x": 54,
+        "y": 779,
+        "w": 712,
+        "h": 182
+    },
+    {
+        "id": "68ec8c109c178ce3",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ed91087e8254a4c8",
+            "c62fcd6b8a1250b8",
+            "054eeb2445a827d7",
+            "80d096df64087dfb",
+            "4637634695f2d1d5",
+            "66fa250ba027eabb",
+            "9ce2e9366ccb75cd"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "768a45de655105dc",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "aebbb7e7fce1cfc8",
+            "74778d702fca4771",
+            "3eb20cec3faaf400",
+            "eff8368aaeef9e4a",
+            "b7b9744ae8e610c2",
+            "893000912b16b9f3",
+            "134651d29dc45341"
+        ],
+        "x": 14,
+        "y": 219,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "bea6e8bab20f18d5",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "42aa4f6f7785a2cd",
+            "5277db54718c45f4",
+            "d98f96fcbe22f78c",
+            "494eef4194ec3903",
+            "b6cf773e74516f8b",
+            "1e115e3d124021e6",
+            "43cd120e6fddb389"
+        ],
+        "x": 14,
+        "y": 419,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "f20189f0d99afdb1",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "da8197118bb5fbbd",
+            "7719980a346b3435",
+            "f493bf05d8fb125f",
+            "3afa02a154c82cac",
+            "982129ad94e0757b",
+            "8cbabd6889631834",
+            "805dcffb5b12f9b3"
+        ],
+        "x": 14,
+        "y": 619,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "6c9d16f8539ab9c3",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "11466e6230976fdb",
+            "a12c3cb698d9764b",
+            "881d56ecbbda3cf0",
+            "1a8d7cfeeb5541c3",
+            "9652c79f1f28c93e",
+            "7e87df3a63ad1032",
+            "ca0b6c98c760d2fd"
+        ],
+        "x": 14,
+        "y": 819,
+        "w": 932,
+        "h": 162
+    },
+    {
+        "id": "a89c75c1308665f3",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "82efc65b4855812b",
+            "627c5e3d2ae0f8fe",
+            "99710213fbc1fea8",
+            "02b197ba127a1089",
+            "fa3c01c7a85dc950",
+            "4a68b608b36d8190",
+            "d57b2b9acb71ca3f"
+        ],
+        "x": 14,
+        "y": 999,
+        "w": 972,
+        "h": 182
+    },
+    {
+        "id": "e1cf7efcc6b64c78",
+        "type": "group",
+        "z": "6cbf8c4120244dc9",
+        "name": "",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "871cea5829b16256",
+            "74bf48c90ac86483",
+            "833d356fcfae6f3b",
+            "56b49c840b6db7c5",
+            "2688bf9b372e6ade",
+            "e05f75168017df95",
+            "74747a1b85ea4d46"
+        ],
+        "x": 14,
+        "y": 1239,
+        "w": 972,
+        "h": 182
+    },
+    {
+        "id": "8e170803fc6557d8",
+        "type": "group",
+        "z": "22bb27a829b5f023",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "69100efb60c07d13",
+            "d7f61545ddebbd2d",
+            "25a2d53c78082523",
+            "114f215ee2881543",
+            "ffba63d18207c6cd",
+            "89468639b8d05dc6",
+            "7330bdd2d116ee44"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "5efb1246d2766918",
+        "type": "group",
+        "z": "22bb27a829b5f023",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ae802cdd1740ed26",
+            "eccb1d3237023fd9",
+            "649cd90db8e25766",
+            "7bc7fd08c9cac838",
+            "07e049eff0a7be15",
+            "4979639608478001",
+            "d84d2a48e139e920"
+        ],
+        "x": 54,
+        "y": 279,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "c4eac79d55270d04",
+        "type": "group",
+        "z": "86eda314994bb24e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "2baa9a5e5badc4fb",
+            "9eb6cb78b032ae87",
+            "f81ed81cb8ae792c",
+            "cf525a844b8f529b",
+            "7120df0fc3408fae",
+            "38d858102d3ea931",
+            "3c83ea827245c35b",
+            "b41573a8f61251f0"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 912,
+        "h": 182
+    },
+    {
+        "id": "a9d901210f5ed97f",
+        "type": "group",
+        "z": "86eda314994bb24e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c922a70d48ecba6f",
+            "5ff1e3c2d5977a34",
+            "8cdd141dbdb350c7",
+            "7eb010a4671ac181",
+            "392bb1fd60c29baf",
+            "e9d279677dbc87e8",
+            "b5a0be263abb0db1",
+            "b97147de9a01ba5a"
+        ],
+        "x": 34,
+        "y": 259,
+        "w": 832,
+        "h": 202
+    },
+    {
+        "id": "5615d410de014b6e",
+        "type": "group",
+        "z": "aace168b2efa4b3d",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c87809a77af95027",
+            "c0a9dd86ac26bf92",
+            "8b3613f05a9821e1",
+            "b39ce39746d1c8c5",
+            "e1c79387a64b241d"
+        ],
+        "x": 34,
+        "y": 59,
+        "w": 632,
+        "h": 182
+    },
+    {
+        "id": "967b0f38717fee48",
+        "type": "global-config",
+        "name": "global-config",
+        "env": []
+    },
+    {
+        "id": "a4ea3e67f4f22f22",
+        "type": "OpcUa-Endpoint",
+        "name": "My first UA",
+        "endpoint": "opc.tcp:192.168.1.111:4840",
+        "secpol": "Basic256Sha256",
+        "secmode": "SignAndEncrypt",
+        "none": false,
+        "login": true,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "d960f8763bdb5f86",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "67e3b4d94cf8ed60",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "5276e34c2bf203da",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "d960f8763bdb5f86",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "67e3b4d94cf8ed60",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2cc0bef687e9bf4a",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "5276e34c2bf203da",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "8e2307f08bde8bae",
+        "type": "function",
+        "z": "3df32596d77a5f7b",
+        "g": "48e3e09007aa5530",
+        "name": "Inc Counter",
+        "func": "msg.payload = global.get(\"FlowCounter\");\n\nmsg.payload = msg.payload + env.get(\"incStep\");\n\nglobal.set(\"FlowCounter\",msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"FlowCounter\",0);",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c997532e1b83d3c0",
+        "type": "comment",
+        "z": "3df32596d77a5f7b",
+        "g": "48e3e09007aa5530",
+        "name": "Counter inc",
+        "info": "",
+        "x": 150,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4df6bc72de92025e",
+        "type": "inject",
+        "z": "05c339ca4c7778d6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "f97cac14f6ad355d"
+            ]
+        ]
+    },
+    {
+        "id": "f97cac14f6ad355d",
+        "type": "debug",
+        "z": "05c339ca4c7778d6",
+        "name": "timestamp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e0680b0c62f39598",
+        "type": "inject",
+        "z": "05c339ca4c7778d6",
+        "g": "0b4df930ec627d8f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "bcb078325b195d90"
+            ]
+        ]
+    },
+    {
+        "id": "bcb078325b195d90",
+        "type": "OpcUa-Browser",
+        "z": "05c339ca4c7778d6",
+        "g": "0b4df930ec627d8f",
+        "endpoint": "a4ea3e67f4f22f22",
+        "item": "",
+        "datatype": "",
+        "topic": "ns=0;i=85",
+        "items": [],
+        "name": "OPC UA Browser",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "9419b03d12cb4611"
+            ]
+        ]
+    },
+    {
+        "id": "9419b03d12cb4611",
+        "type": "debug",
+        "z": "05c339ca4c7778d6",
+        "g": "0b4df930ec627d8f",
+        "name": "UA Browser",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "eaa02bca4c80887a",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "0b4df930ec627d8f",
+        "name": "opc.tcp:192.168.1.111:4840",
+        "info": "",
+        "x": 200,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "737e57e0e62a6b0b",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "0b4df930ec627d8f",
+        "name": "Topic : ns=0;i=85",
+        "info": "",
+        "x": 160,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "734196bf20174157",
+        "type": "inject",
+        "z": "05c339ca4c7778d6",
+        "g": "76d9212ce781f902",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "331170ee32c671c1"
+            ]
+        ]
+    },
+    {
+        "id": "331170ee32c671c1",
+        "type": "OpcUa-Browser",
+        "z": "05c339ca4c7778d6",
+        "g": "76d9212ce781f902",
+        "endpoint": "a4ea3e67f4f22f22",
+        "item": "",
+        "datatype": "",
+        "topic": "ns=8;i=2000",
+        "items": [],
+        "name": "OPC UA Browser",
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "bbd14c6c4fb49b81"
+            ]
+        ]
+    },
+    {
+        "id": "bbd14c6c4fb49b81",
+        "type": "debug",
+        "z": "05c339ca4c7778d6",
+        "g": "76d9212ce781f902",
+        "name": "UA Browser",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e0b6957aa56bd297",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "76d9212ce781f902",
+        "name": "opc.tcp:192.168.1.111:4840",
+        "info": "",
+        "x": 200,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9ecf1bd6efeb903d",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "76d9212ce781f902",
+        "name": "Topic for data layer: ns=8;i=2000",
+        "info": "",
+        "x": 210,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1f4f0612d03e75f2",
+        "type": "inject",
+        "z": "05c339ca4c7778d6",
+        "g": "ccab6c726277e819",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "6c7be5ee96b40cba"
+            ]
+        ]
+    },
+    {
+        "id": "6c7be5ee96b40cba",
+        "type": "OpcUa-Browser",
+        "z": "05c339ca4c7778d6",
+        "g": "ccab6c726277e819",
+        "endpoint": "a4ea3e67f4f22f22",
+        "item": "",
+        "datatype": "",
+        "topic": "ns=8;s=plc/app/Application/sym",
+        "items": [],
+        "name": "OPC UA Browser",
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "b3dd8f60b1f58135"
+            ]
+        ]
+    },
+    {
+        "id": "b3dd8f60b1f58135",
+        "type": "debug",
+        "z": "05c339ca4c7778d6",
+        "g": "ccab6c726277e819",
+        "name": "plc/app/Application/sym",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d71f8868427e4520",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "ccab6c726277e819",
+        "name": "opc.tcp:192.168.1.111:4840",
+        "info": "",
+        "x": 200,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c3d0b96b8a29736a",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "ccab6c726277e819",
+        "name": "Topic for data layer: ns=8;s=plc/app/Application/sym",
+        "info": "",
+        "x": 270,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "82a7830a2dd1e30a",
+        "type": "inject",
+        "z": "05c339ca4c7778d6",
+        "g": "093368e992ef3423",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 820,
+        "wires": [
+            [
+                "842693c30f18b47a"
+            ]
+        ]
+    },
+    {
+        "id": "842693c30f18b47a",
+        "type": "OpcUa-Browser",
+        "z": "05c339ca4c7778d6",
+        "g": "093368e992ef3423",
+        "endpoint": "a4ea3e67f4f22f22",
+        "item": "",
+        "datatype": "",
+        "topic": "ns=8;s=plc/app/Application/sym/Lab_AAut",
+        "items": [],
+        "name": "OPC UA Browser",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "14cdd6aea1cf2f2d"
+            ]
+        ]
+    },
+    {
+        "id": "14cdd6aea1cf2f2d",
+        "type": "debug",
+        "z": "05c339ca4c7778d6",
+        "g": "093368e992ef3423",
+        "name": "plc/app/Application/sym",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7bbda2e3ca85cf3f",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "093368e992ef3423",
+        "name": "opc.tcp:192.168.1.111:4840",
+        "info": "",
+        "x": 200,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "77baa8e4a752bb75",
+        "type": "comment",
+        "z": "05c339ca4c7778d6",
+        "g": "093368e992ef3423",
+        "name": "Topic for data layer: ns=8;s=plc/app/Application/sym/Lab_AAut",
+        "info": "",
+        "x": 300,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ed91087e8254a4c8",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/iInt",
+        "datatype": "Int16",
+        "value": "",
+        "name": "OPC UA Item Int16",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "054eeb2445a827d7"
+            ]
+        ]
+    },
+    {
+        "id": "c62fcd6b8a1250b8",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "ed91087e8254a4c8"
+            ]
+        ]
+    },
+    {
+        "id": "054eeb2445a827d7",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Read Int16",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "80d096df64087dfb"
+            ],
+            [
+                "4637634695f2d1d5"
+            ],
+            [
+                "66fa250ba027eabb"
+            ]
+        ]
+    },
+    {
+        "id": "80d096df64087dfb",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4637634695f2d1d5",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "66fa250ba027eabb",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "name": "Raw Respons",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "aebbb7e7fce1cfc8",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/iInt",
+        "datatype": "Int16",
+        "value": "43",
+        "name": "OPC UA Item Int16",
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "3eb20cec3faaf400"
+            ]
+        ]
+    },
+    {
+        "id": "74778d702fca4771",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "aebbb7e7fce1cfc8"
+            ]
+        ]
+    },
+    {
+        "id": "3eb20cec3faaf400",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Write Int16",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [
+                "eff8368aaeef9e4a"
+            ],
+            [
+                "b7b9744ae8e610c2"
+            ],
+            [
+                "893000912b16b9f3"
+            ]
+        ]
+    },
+    {
+        "id": "eff8368aaeef9e4a",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b7b9744ae8e610c2",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "893000912b16b9f3",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "da8197118bb5fbbd",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/uliLoop",
+        "datatype": "UInt64",
+        "value": "",
+        "name": "OPC UA Item UInt64",
+        "x": 340,
+        "y": 700,
+        "wires": [
+            [
+                "f493bf05d8fb125f"
+            ]
+        ]
+    },
+    {
+        "id": "7719980a346b3435",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 700,
+        "wires": [
+            [
+                "da8197118bb5fbbd"
+            ]
+        ]
+    },
+    {
+        "id": "f493bf05d8fb125f",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Read Uint 64",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 590,
+        "y": 700,
+        "wires": [
+            [
+                "3afa02a154c82cac"
+            ],
+            [
+                "982129ad94e0757b"
+            ],
+            [
+                "8cbabd6889631834"
+            ]
+        ]
+    },
+    {
+        "id": "3afa02a154c82cac",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "982129ad94e0757b",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "8cbabd6889631834",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a12c3cb698d9764b",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/rReal",
+        "datatype": "Float",
+        "value": "",
+        "name": "OPC UA Item Float",
+        "x": 330,
+        "y": 900,
+        "wires": [
+            [
+                "1a8d7cfeeb5541c3"
+            ]
+        ]
+    },
+    {
+        "id": "881d56ecbbda3cf0",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 900,
+        "wires": [
+            [
+                "a12c3cb698d9764b"
+            ]
+        ]
+    },
+    {
+        "id": "1a8d7cfeeb5541c3",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Read Float",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 580,
+        "y": 900,
+        "wires": [
+            [
+                "9652c79f1f28c93e"
+            ],
+            [
+                "7e87df3a63ad1032"
+            ],
+            [
+                "11466e6230976fdb"
+            ]
+        ]
+    },
+    {
+        "id": "9652c79f1f28c93e",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "7e87df3a63ad1032",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "11466e6230976fdb",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "82efc65b4855812b",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/lrLreal",
+        "datatype": "Float",
+        "value": "",
+        "name": "OPC UA Item Double",
+        "x": 340,
+        "y": 1080,
+        "wires": [
+            [
+                "99710213fbc1fea8"
+            ]
+        ]
+    },
+    {
+        "id": "627c5e3d2ae0f8fe",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1080,
+        "wires": [
+            [
+                "82efc65b4855812b"
+            ]
+        ]
+    },
+    {
+        "id": "99710213fbc1fea8",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Read Double",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 590,
+        "y": 1080,
+        "wires": [
+            [
+                "02b197ba127a1089"
+            ],
+            [
+                "fa3c01c7a85dc950"
+            ],
+            [
+                "4a68b608b36d8190"
+            ]
+        ]
+    },
+    {
+        "id": "02b197ba127a1089",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "fa3c01c7a85dc950",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "4a68b608b36d8190",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "9ce2e9366ccb75cd",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "68ec8c109c178ce3",
+        "name": "Read Int16",
+        "info": "",
+        "x": 120,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "134651d29dc45341",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "768a45de655105dc",
+        "name": "Write Int16",
+        "info": "",
+        "x": 100,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "42aa4f6f7785a2cd",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/diDint",
+        "datatype": "Int32",
+        "value": "",
+        "name": "OPC UA Item Int32",
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "d98f96fcbe22f78c"
+            ]
+        ]
+    },
+    {
+        "id": "5277db54718c45f4",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "42aa4f6f7785a2cd"
+            ]
+        ]
+    },
+    {
+        "id": "d98f96fcbe22f78c",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Read Dint32",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 580,
+        "y": 500,
+        "wires": [
+            [
+                "494eef4194ec3903"
+            ],
+            [
+                "b6cf773e74516f8b"
+            ],
+            [
+                "1e115e3d124021e6"
+            ]
+        ]
+    },
+    {
+        "id": "494eef4194ec3903",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b6cf773e74516f8b",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1e115e3d124021e6",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "name": "Raw Respons",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "43cd120e6fddb389",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "bea6e8bab20f18d5",
+        "name": "Read Int32",
+        "info": "",
+        "x": 100,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "805dcffb5b12f9b3",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "f20189f0d99afdb1",
+        "name": "Read Int64",
+        "info": "",
+        "x": 120,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "ca0b6c98c760d2fd",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "6c9d16f8539ab9c3",
+        "name": "Read Float",
+        "info": "",
+        "x": 100,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "d57b2b9acb71ca3f",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "a89c75c1308665f3",
+        "name": "Read Double",
+        "info": "",
+        "x": 130,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "871cea5829b16256",
+        "type": "OpcUa-Item",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/myArray",
+        "datatype": "Float Array",
+        "value": "",
+        "name": "OPC UA Item Float Array",
+        "x": 330,
+        "y": 1320,
+        "wires": [
+            [
+                "833d356fcfae6f3b"
+            ]
+        ]
+    },
+    {
+        "id": "74bf48c90ac86483",
+        "type": "inject",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1320,
+        "wires": [
+            [
+                "871cea5829b16256"
+            ]
+        ]
+    },
+    {
+        "id": "833d356fcfae6f3b",
+        "type": "OpcUa-Client",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Read Float Array",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 600,
+        "y": 1320,
+        "wires": [
+            [
+                "56b49c840b6db7c5"
+            ],
+            [
+                "2688bf9b372e6ade"
+            ],
+            [
+                "e05f75168017df95"
+            ]
+        ]
+    },
+    {
+        "id": "56b49c840b6db7c5",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2688bf9b372e6ade",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "e05f75168017df95",
+        "type": "debug",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "74747a1b85ea4d46",
+        "type": "comment",
+        "z": "6cbf8c4120244dc9",
+        "g": "e1cf7efcc6b64c78",
+        "name": "Float Array",
+        "info": "",
+        "x": 120,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "69100efb60c07d13",
+        "type": "debug",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d7f61545ddebbd2d",
+        "type": "OpcUa-Item",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/diLoop",
+        "datatype": "Int32",
+        "value": "",
+        "name": "OPC UA Item DINT",
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "114f215ee2881543"
+            ]
+        ]
+    },
+    {
+        "id": "25a2d53c78082523",
+        "type": "inject",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "d7f61545ddebbd2d"
+            ]
+        ]
+    },
+    {
+        "id": "114f215ee2881543",
+        "type": "OpcUa-Client",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "subscribe",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": "1",
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Subscribe Loop",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "ffba63d18207c6cd"
+            ],
+            [
+                "89468639b8d05dc6"
+            ],
+            [
+                "69100efb60c07d13"
+            ]
+        ]
+    },
+    {
+        "id": "ffba63d18207c6cd",
+        "type": "debug",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "name": "Tag Value",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "89468639b8d05dc6",
+        "type": "debug",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7330bdd2d116ee44",
+        "type": "comment",
+        "z": "22bb27a829b5f023",
+        "g": "8e170803fc6557d8",
+        "name": "Subscribe diLoop",
+        "info": "",
+        "x": 180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ae802cdd1740ed26",
+        "type": "debug",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "eccb1d3237023fd9",
+        "type": "OpcUa-Item",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/rReal",
+        "datatype": "Float",
+        "value": "",
+        "name": "OPC UA Item Float",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "7bc7fd08c9cac838"
+            ]
+        ]
+    },
+    {
+        "id": "649cd90db8e25766",
+        "type": "inject",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "eccb1d3237023fd9"
+            ]
+        ]
+    },
+    {
+        "id": "7bc7fd08c9cac838",
+        "type": "OpcUa-Client",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "subscribe",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": "1",
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Subscribe rReal",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "07e049eff0a7be15"
+            ],
+            [
+                "4979639608478001"
+            ],
+            [
+                "ae802cdd1740ed26"
+            ]
+        ]
+    },
+    {
+        "id": "07e049eff0a7be15",
+        "type": "debug",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4979639608478001",
+        "type": "debug",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d84d2a48e139e920",
+        "type": "comment",
+        "z": "22bb27a829b5f023",
+        "g": "5efb1246d2766918",
+        "name": "Subscribe rReal",
+        "info": "",
+        "x": 180,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c922a70d48ecba6f",
+        "type": "OpcUa-Client",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "useTransport": false,
+        "maxChunkCount": "",
+        "maxMessageSize": "",
+        "receiveBufferSize": "",
+        "sendBufferSize": "",
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "7eb010a4671ac181"
+            ],
+            [
+                "392bb1fd60c29baf"
+            ],
+            [
+                "e9d279677dbc87e8"
+            ]
+        ]
+    },
+    {
+        "id": "5ff1e3c2d5977a34",
+        "type": "OpcUa-Item",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/diDint",
+        "datatype": "Int32",
+        "value": "57",
+        "name": "",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "c922a70d48ecba6f"
+            ]
+        ]
+    },
+    {
+        "id": "8cdd141dbdb350c7",
+        "type": "inject",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "name": "Write",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "78",
+        "payloadType": "num",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "5ff1e3c2d5977a34"
+            ]
+        ]
+    },
+    {
+        "id": "7eb010a4671ac181",
+        "type": "debug",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "392bb1fd60c29baf",
+        "type": "debug",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e9d279677dbc87e8",
+        "type": "debug",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "name": "Raw Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2baa9a5e5badc4fb",
+        "type": "debug",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "name": "Raw Respons",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9eb6cb78b032ae87",
+        "type": "OpcUa-Item",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "item": "ns=2;s=plc/app/Application/sym/Lab_AAut/rReal",
+        "datatype": "Float",
+        "value": "",
+        "name": "OPC UA Item Float",
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "f81ed81cb8ae792c"
+            ]
+        ]
+    },
+    {
+        "id": "f81ed81cb8ae792c",
+        "type": "OpcUa-Client",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "endpoint": "a4ea3e67f4f22f22",
+        "action": "write",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": "1",
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "useTransport": false,
+        "maxChunkCount": 1,
+        "maxMessageSize": 8192,
+        "receiveBufferSize": 8192,
+        "sendBufferSize": 8192,
+        "setstatusandtime": false,
+        "keepsessionalive": false,
+        "name": "UA Client Write rReal",
+        "applicationName": "",
+        "applicationUri": "",
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "cf525a844b8f529b"
+            ],
+            [
+                "7120df0fc3408fae"
+            ],
+            [
+                "2baa9a5e5badc4fb"
+            ]
+        ]
+    },
+    {
+        "id": "cf525a844b8f529b",
+        "type": "debug",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "name": "Tag Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7120df0fc3408fae",
+        "type": "debug",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "name": "Errors",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "38d858102d3ea931",
+        "type": "comment",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "name": "Write Float",
+        "info": "",
+        "x": 140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b5a0be263abb0db1",
+        "type": "comment",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "name": "Write Int32",
+        "info": "",
+        "x": 140,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b97147de9a01ba5a",
+        "type": "ui-slider",
+        "z": "86eda314994bb24e",
+        "g": "a9d901210f5ed97f",
+        "group": "2cc0bef687e9bf4a",
+        "name": "Write Dint",
+        "label": "slider",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "5ff1e3c2d5977a34"
+            ]
+        ]
+    },
+    {
+        "id": "3c83ea827245c35b",
+        "type": "inject",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "name": "Write",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3.56",
+        "payloadType": "num",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "9eb6cb78b032ae87"
+            ]
+        ]
+    },
+    {
+        "id": "b41573a8f61251f0",
+        "type": "ui-slider",
+        "z": "86eda314994bb24e",
+        "g": "c4eac79d55270d04",
+        "group": "2cc0bef687e9bf4a",
+        "name": "Write Float",
+        "label": "slider",
+        "tooltip": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": 10,
+        "step": "0.1",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "9eb6cb78b032ae87"
+            ]
+        ]
+    },
+    {
+        "id": "d002c55cc67dd3bd",
+        "type": "OpcUa-Method",
+        "z": "aace168b2efa4b3d",
+        "endpoint": "a4ea3e67f4f22f22",
+        "objectId": "ns=2;s=plc/app/Application/sym/Lab_AAut/fbOpcUa",
+        "methodId": "ns=6;s=plc/app/Application/sym/Lab_AAut/fbOpcUa/M_Pick",
+        "name": "M_Pick",
+        "inputArguments": [],
+        "outputArguments": [],
+        "arg0name": "nestNumber",
+        "arg0type": "UInt32",
+        "arg0typeid": "",
+        "arg0value": "1",
+        "arg1name": "targetVelocity",
+        "arg1type": "Double",
+        "arg1typeid": "",
+        "arg1value": "0.1",
+        "arg2name": "targetAcceleration",
+        "arg2type": "Double",
+        "arg2typeid": "",
+        "arg2value": "1",
+        "out0name": "strStatus",
+        "out0type": "String",
+        "out0typeid": "",
+        "out0value": "",
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "f50eddcc6590c088"
+            ]
+        ]
+    },
+    {
+        "id": "2e70ee8b38adb59a",
+        "type": "inject",
+        "z": "aace168b2efa4b3d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "d002c55cc67dd3bd"
+            ]
+        ]
+    },
+    {
+        "id": "f50eddcc6590c088",
+        "type": "debug",
+        "z": "aace168b2efa4b3d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c87809a77af95027",
+        "type": "inject",
+        "z": "aace168b2efa4b3d",
+        "g": "5615d410de014b6e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "c0a9dd86ac26bf92"
+            ]
+        ]
+    },
+    {
+        "id": "c0a9dd86ac26bf92",
+        "type": "OpcUa-Browser",
+        "z": "aace168b2efa4b3d",
+        "g": "5615d410de014b6e",
+        "endpoint": "a4ea3e67f4f22f22",
+        "item": "",
+        "datatype": "",
+        "topic": "ns=0;i=85",
+        "items": [],
+        "name": "OPC UA Browser",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "8b3613f05a9821e1"
+            ]
+        ]
+    },
+    {
+        "id": "8b3613f05a9821e1",
+        "type": "debug",
+        "z": "aace168b2efa4b3d",
+        "g": "5615d410de014b6e",
+        "name": "UA Browser",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b39ce39746d1c8c5",
+        "type": "comment",
+        "z": "aace168b2efa4b3d",
+        "g": "5615d410de014b6e",
+        "name": "opc.tcp:192.168.1.111:4840",
+        "info": "",
+        "x": 180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e1c79387a64b241d",
+        "type": "comment",
+        "z": "aace168b2efa4b3d",
+        "g": "5615d410de014b6e",
+        "name": "Topic : ns=0;i=85",
+        "info": "",
+        "x": 140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "27c56d8bf8bc88f6",
+        "type": "debug",
+        "z": "aace168b2efa4b3d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1655fab1fe7aad04",
+        "type": "OpcUa-Method",
+        "z": "aace168b2efa4b3d",
+        "endpoint": "a4ea3e67f4f22f22",
+        "objectId": "ns=2;s=plc/app/Application/sym/Lab_AAut/fbOpcUa",
+        "methodId": "ns=6;s=plc/app/Application/sym/Lab_AAut/fbOpcUa/M_Enable",
+        "name": "M_Enable",
+        "inputArguments": [],
+        "outputArguments": [],
+        "arg0name": "xBool",
+        "arg0type": "Boolean",
+        "arg0typeid": "1",
+        "arg0value": "1",
+        "arg1name": "",
+        "arg1type": "",
+        "arg1typeid": "",
+        "arg1value": "",
+        "arg2name": "",
+        "arg2type": "",
+        "arg2typeid": "",
+        "arg2value": "",
+        "out0name": "M_Enable",
+        "out0type": "Int32",
+        "out0typeid": "",
+        "out0value": "",
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "27c56d8bf8bc88f6"
+            ]
+        ]
+    },
+    {
+        "id": "489b4ae5d4b1ed3a",
+        "type": "inject",
+        "z": "aace168b2efa4b3d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "1655fab1fe7aad04"
+            ]
+        ]
+    }
+]
