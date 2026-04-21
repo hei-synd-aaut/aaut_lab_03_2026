@@ -9,6 +9,10 @@ Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
 required : UA Expert client
 
+
+## Version
+CtrlX PLC 3.6.3
+
 # Base
 This lab is based on [Rob AAut, see this repo for details](https://github.com/hei-synd-aaut/rob_lab_01_2026).
 
@@ -22,11 +26,6 @@ This lab is based on [Rob AAut, see this repo for details](https://github.com/he
 - Velocity: about 0.1 [m/s]
 - Acceleration: about 1 [m/s2]
 
-## Preamble
-This lab was developped for a robotic lab with camera calibration using a QR-Code. Most of the files on this repository are not directly dedicated to this lab. See [Robotics for details](./Robotics).
-
-## Version
-CtrlX PLC 3.6.3
 
 ## S-88, *IEC 61512*, A few reminders
 
@@ -55,40 +54,67 @@ Unit *-- Equipment Module
 
 :bulb: *Associations represent relationships between the objects of one class and the objects of another.*
 
-## Goal of the lab
+:bulb: Equipment modules may execute equipment phases but they do not have the capability of executing higher level procedural elements.
 
 Either we have a system where the equipment modules no longer depend on the machine, Unit, but can be controlled directly from an external system.
 
+---
+
+## Goal of the lab
+
+We have the following system:
+
+<div align="center">
+
 ```mermaid
 classDiagram
-Unit Procedure *-- Operation
-Operation *-- Phase
 
-Phase --> Equipment Module : Combined with
+PLC_PACK_ABox -- PRG_Unit
+PRG_Unit *-- EM_Robot
 
-Unit *-- Equipment Module
+    class EM_Robot{
+        +Group_Disabled : BOOL
+        +Group_Errorstop : BOOL
+        +Group_Standby : BOOL
+        +M_MoveLinear(...) DINT
+        +M_Pick(...) DINT
+        +M_Place(...) DINT
+        +M_RobotActivate(...) DINT
+    }
 
 ```
+</div>
 
-:bulb: Equipment modules may execute equipment phases but they do not have the capability of executing higher level procedural elements.
+It is assumed that we want to control the robot directly at the equipment level from an external system via OPC-UA. For example, a Siemens PLC with an OPC-UA client.
 
-In this lab, we suppose that we want to control diretctly the Equipment Modules using OPC-UA. To test the functionalities, we will use Node-RED with the [node-red-contrib-opcua palette](https://flows.nodered.org/node/node-red-contrib-opcua).
+---
 
-### List of methods for the robot
+# Your job
 
-- Methods include positions in X,Y,Z, velocity, acceleration and jerk.
-- Methods include Pick with nest number.
-- Methods inclue Place with nest number.
-- Method for the Gripper.
+You are asked to perform some preliminary tests to verify:
+  1. It is possible to control the robot directly from an external system via OPC-UA. That is, to use its methods.
+  2. It is possible to control the unit directly using the functionalities of PackML combined with OPC-UA.
 
-Read positions
-Write a single parameter
-Read a structure
-Write a structure
+You won't be able to test everything, so select a few relevant examples, then:
+  1. Explain what you will test, typically one or two functionalities of the FS, **Functional Specification**. Approximately $45 \, minutes$.
+  2. Set up your tests, describing what you are doing in the form of a diagram or code. Approximately $2 \times 45 \, minutes$.
+  3. Reserve about $45 \, minutes$ to test what you have implemented, what works and what doesn't.
+  4. A paragraph addressing OT security aspects is expected.
+  5. You have until <b style='color:red;'>Tuesday, April 28 at 11:59 p.m.</b> to submit your work.
 
-Store / Restore.
+## Tools at your disposal.
+  1. The robot project in ``/plc/CtrlX-lab-rob_2026_V_3_6.projectarchive``
+  2. The Node-RED instance of the previous project in ``/NodeRed/flows.json``.
+  3. A simplified project in ``/NodeRedUaHandsOn/CtrlX-lab-Ua_2026_V_3_6.projectarchive`` with the corresponding ``flows.json`` file.
+  4. UA Expert should be installed on your lab PC.
 
-## About Set Get
+:bulb: We recommend working with the simplified project, which will likely allow you to quickly test certain technical aspects without being burdened by the associated hardware. This is a POF, Proof of Concept.
+
+---
+
+## annexes
+
+### About Set Get
 Try to use OPC UA to read/write attribute.
 
 With 
@@ -105,7 +131,7 @@ With
 PROPERTY Group_Disabled : BOOL
 ```
 
-## About WSTRING
+### About WSTRING
 What does WSTRING means ?
 
 Can you display that ``안녕하세요`` in your OPC-UA Test Tool ?
