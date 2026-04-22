@@ -132,7 +132,7 @@
             "737e57e0e62a6b0b"
         ],
         "x": 54,
-        "y": 159,
+        "y": 119,
         "w": 632,
         "h": 182
     },
@@ -157,7 +157,7 @@
             "9ecf1bd6efeb903d"
         ],
         "x": 54,
-        "y": 359,
+        "y": 319,
         "w": 632,
         "h": 182
     },
@@ -182,7 +182,7 @@
             "c3d0b96b8a29736a"
         ],
         "x": 54,
-        "y": 579,
+        "y": 519,
         "w": 712,
         "h": 182
     },
@@ -207,8 +207,8 @@
             "77baa8e4a752bb75"
         ],
         "x": 54,
-        "y": 779,
-        "w": 712,
+        "y": 719,
+        "w": 772,
         "h": 182
     },
     {
@@ -535,7 +535,7 @@
         "id": "a4ea3e67f4f22f22",
         "type": "OpcUa-Endpoint",
         "name": "My first UA",
-        "endpoint": "opc.tcp:192.168.1.111:4840",
+        "endpoint": "opc.tcp:192.168.0.200:4840",
         "secpol": "Basic256Sha256",
         "secmode": "SignAndEncrypt",
         "none": false,
@@ -732,7 +732,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 160,
-        "y": 200,
+        "y": 160,
         "wires": [
             [
                 "bcb078325b195d90"
@@ -751,7 +751,7 @@
         "items": [],
         "name": "OPC UA Browser",
         "x": 370,
-        "y": 200,
+        "y": 160,
         "wires": [
             [
                 "9419b03d12cb4611"
@@ -773,7 +773,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 570,
-        "y": 200,
+        "y": 160,
         "wires": []
     },
     {
@@ -784,7 +784,7 @@
         "name": "opc.tcp:192.168.1.111:4840",
         "info": "",
         "x": 200,
-        "y": 260,
+        "y": 220,
         "wires": []
     },
     {
@@ -795,7 +795,7 @@
         "name": "Topic : ns=0;i=85",
         "info": "",
         "x": 160,
-        "y": 300,
+        "y": 260,
         "wires": []
     },
     {
@@ -821,7 +821,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 160,
-        "y": 400,
+        "y": 360,
         "wires": [
             [
                 "331170ee32c671c1"
@@ -840,7 +840,7 @@
         "items": [],
         "name": "OPC UA Browser",
         "x": 370,
-        "y": 400,
+        "y": 360,
         "wires": [
             [
                 "bbd14c6c4fb49b81"
@@ -862,7 +862,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 570,
-        "y": 400,
+        "y": 360,
         "wires": []
     },
     {
@@ -873,7 +873,7 @@
         "name": "opc.tcp:192.168.1.111:4840",
         "info": "",
         "x": 200,
-        "y": 460,
+        "y": 420,
         "wires": []
     },
     {
@@ -884,7 +884,7 @@
         "name": "Topic for data layer: ns=8;i=2000",
         "info": "",
         "x": 210,
-        "y": 500,
+        "y": 460,
         "wires": []
     },
     {
@@ -910,7 +910,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 160,
-        "y": 620,
+        "y": 560,
         "wires": [
             [
                 "6c7be5ee96b40cba"
@@ -929,7 +929,7 @@
         "items": [],
         "name": "OPC UA Browser",
         "x": 370,
-        "y": 620,
+        "y": 560,
         "wires": [
             [
                 "b3dd8f60b1f58135"
@@ -951,7 +951,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 610,
-        "y": 620,
+        "y": 560,
         "wires": []
     },
     {
@@ -962,7 +962,7 @@
         "name": "opc.tcp:192.168.1.111:4840",
         "info": "",
         "x": 200,
-        "y": 680,
+        "y": 620,
         "wires": []
     },
     {
@@ -973,7 +973,7 @@
         "name": "Topic for data layer: ns=8;s=plc/app/Application/sym",
         "info": "",
         "x": 270,
-        "y": 720,
+        "y": 660,
         "wires": []
     },
     {
@@ -999,7 +999,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 160,
-        "y": 820,
+        "y": 760,
         "wires": [
             [
                 "842693c30f18b47a"
@@ -1018,7 +1018,7 @@
         "items": [],
         "name": "OPC UA Browser",
         "x": 370,
-        "y": 820,
+        "y": 760,
         "wires": [
             [
                 "14cdd6aea1cf2f2d"
@@ -1030,7 +1030,7 @@
         "type": "debug",
         "z": "05c339ca4c7778d6",
         "g": "093368e992ef3423",
-        "name": "plc/app/Application/sym",
+        "name": "plc/app/Application/sym/Lab_AAut",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1039,8 +1039,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 610,
-        "y": 820,
+        "x": 640,
+        "y": 760,
         "wires": []
     },
     {
@@ -1051,7 +1051,7 @@
         "name": "opc.tcp:192.168.1.111:4840",
         "info": "",
         "x": 200,
-        "y": 880,
+        "y": 820,
         "wires": []
     },
     {
@@ -1062,7 +1062,7 @@
         "name": "Topic for data layer: ns=8;s=plc/app/Application/sym/Lab_AAut",
         "info": "",
         "x": 300,
-        "y": 920,
+        "y": 860,
         "wires": []
     },
     {
@@ -2780,7 +2780,7 @@
         "name": "Write Float",
         "label": "slider",
         "tooltip": "",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
