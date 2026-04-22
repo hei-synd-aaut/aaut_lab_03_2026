@@ -1,13 +1,5 @@
 [
     {
-        "id": "9f43651d27666c07",
-        "type": "tab",
-        "label": "sandbox",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "155f3371898c6d1b",
         "type": "tab",
         "label": "3D Robot",
@@ -972,6 +964,35 @@
         "h": 302
     },
     {
+        "id": "e4bb8adf906ca572",
+        "type": "group",
+        "z": "016306c2d57be25e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b5effce.db9fd",
+            "64d6212b.ba6cd",
+            "226bf82.26e5e88",
+            "efa89bd3d50d6f25",
+            "fe71957d19a64838",
+            "acf520c254baa0a3",
+            "b1e6a763c9078a68",
+            "bae814aaa425b6d5",
+            "7c42697278cbbfbf"
+        ],
+        "x": 34,
+        "y": 1199,
+        "w": 872,
+        "h": 322
+    },
+    {
         "id": "868084a294db2515",
         "type": "group",
         "z": "155f3371898c6d1b",
@@ -1044,35 +1065,6 @@
         "h": 82
     },
     {
-        "id": "e4bb8adf906ca572",
-        "type": "group",
-        "z": "016306c2d57be25e",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "b5effce.db9fd",
-            "64d6212b.ba6cd",
-            "226bf82.26e5e88",
-            "efa89bd3d50d6f25",
-            "fe71957d19a64838",
-            "acf520c254baa0a3",
-            "b1e6a763c9078a68",
-            "bae814aaa425b6d5",
-            "7c42697278cbbfbf"
-        ],
-        "x": 34,
-        "y": 1199,
-        "w": 872,
-        "h": 322
-    },
-    {
         "id": "8966a7b403a8fb88",
         "type": "ui-theme",
         "name": "Default Theme",
@@ -1095,7 +1087,7 @@
         "id": "e45e312c80fc001e",
         "type": "ctrlx-config",
         "name": "Nodered_CtrlX",
-        "hostname": "192.168.1.111",
+        "hostname": "192.168.0.200",
         "debug": false
     },
     {
@@ -1599,130 +1591,6 @@
         "usercert": false,
         "usercertificate": "",
         "userprivatekey": ""
-    },
-    {
-        "id": "bbd421837d8a8be1",
-        "type": "OpcUa-Client",
-        "z": "9f43651d27666c07",
-        "endpoint": "0eb3435dacda75d6",
-        "action": "read",
-        "deadbandtype": "a",
-        "deadbandvalue": 1,
-        "time": 10,
-        "timeUnit": "s",
-        "certificate": "n",
-        "localfile": "",
-        "localkeyfile": "",
-        "securitymode": "None",
-        "securitypolicy": "None",
-        "useTransport": false,
-        "maxChunkCount": 1,
-        "maxMessageSize": 8192,
-        "receiveBufferSize": 8192,
-        "sendBufferSize": 8192,
-        "setstatusandtime": false,
-        "keepsessionalive": false,
-        "name": "",
-        "applicationName": "",
-        "applicationUri": "",
-        "x": 360,
-        "y": 200,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "2a3218ee0966aa1e",
-        "type": "inject",
-        "z": "9f43651d27666c07",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 200,
-        "wires": [
-            [
-                "bbd421837d8a8be1"
-            ]
-        ]
-    },
-    {
-        "id": "9c4be65c7ebd2742",
-        "type": "OpcUa-Item",
-        "z": "9f43651d27666c07",
-        "item": "plc/app/Application/sym/PackTag/hevsPackTime/Date_and_time_string",
-        "datatype": "String",
-        "value": "",
-        "name": "",
-        "x": 340,
-        "y": 320,
-        "wires": [
-            [
-                "e5aad40779445198"
-            ]
-        ]
-    },
-    {
-        "id": "021dab7fc0e071cd",
-        "type": "inject",
-        "z": "9f43651d27666c07",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 320,
-        "wires": [
-            [
-                "9c4be65c7ebd2742"
-            ]
-        ]
-    },
-    {
-        "id": "e5aad40779445198",
-        "type": "debug",
-        "z": "9f43651d27666c07",
-        "name": "OPC UA Item",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 320,
-        "wires": []
     },
     {
         "id": "3b9ce7c81b0617b4",
