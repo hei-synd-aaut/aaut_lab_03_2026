@@ -110,6 +110,12 @@ You won't be able to test everything, so select a few relevant examples, then:
 
 :bulb: We recommend working with the simplified project, which will likely allow you to quickly test certain technical aspects without being burdened by the associated hardware. This is a POF, Proof of Concept.
 
+## Liens utiles.
+
+[OPC UA Tutorial: Connect and Exchange Data with Industrial Equipment](https://flowfuse.com/blog/2025/07/reading-and-writing-plc-data-using-opc-ua/)
+
+[OPC UA Tutorial: Advanced Monitoring with Subscriptions, Alarms, and Historical Data](https://flowfuse.com/blog/2025/08/advanced-opcua-real-time-subscriptions-alarms-historical-data/)
+
 ---
 
 ## annexes

@@ -11,7 +11,7 @@
         "id": "6cbf8c4120244dc9",
         "type": "tab",
         "label": "Read UA",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -19,7 +19,7 @@
         "id": "22bb27a829b5f023",
         "type": "tab",
         "label": "Subscribe",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -27,7 +27,7 @@
         "id": "86eda314994bb24e",
         "type": "tab",
         "label": "Write",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -133,7 +133,7 @@
         ],
         "x": 54,
         "y": 119,
-        "w": 632,
+        "w": 672,
         "h": 182
     },
     {
@@ -634,6 +634,30 @@
         "groupType": "default"
     },
     {
+        "id": "e3b92fc5661e5e6a",
+        "type": "ctrlx-config",
+        "name": "Demo ctrx",
+        "hostname": "192.168.0.200",
+        "debug": false
+    },
+    {
+        "id": "b0c568fa51b6d9a8",
+        "type": "ctrlx-config-subscription",
+        "device": "e3b92fc5661e5e6a",
+        "name": "ctrlx",
+        "publishIntervalMs": "",
+        "publishIntervalUnits": "seconds",
+        "samplingInterval": "",
+        "samplingIntervalUnits": "seconds",
+        "errorInterval": "",
+        "errorIntervalUnits": "seconds",
+        "keepaliveInterval": "",
+        "keepaliveIntervalUnits": "minutes",
+        "queueSize": "",
+        "queueBehaviour": "DiscardOldest",
+        "deadbandValue": ""
+    },
+    {
         "id": "8e2307f08bde8bae",
         "type": "function",
         "z": "3df32596d77a5f7b",
@@ -750,7 +774,7 @@
         "topic": "ns=0;i=85",
         "items": [],
         "name": "OPC UA Browser",
-        "x": 370,
+        "x": 390,
         "y": 160,
         "wires": [
             [
@@ -772,7 +796,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
+        "x": 610,
         "y": 160,
         "wires": []
     },
@@ -1063,6 +1087,38 @@
         "info": "",
         "x": 300,
         "y": 860,
+        "wires": []
+    },
+    {
+        "id": "1256885d7337026a",
+        "type": "ctrlx-datalayer-subscribe",
+        "z": "05c339ca4c7778d6",
+        "subscription": "b0c568fa51b6d9a8",
+        "path": "plc/app/Application/sym/Lab_AAut/diLoop",
+        "name": "",
+        "inputs": 0,
+        "x": 280,
+        "y": 980,
+        "wires": [
+            [
+                "b0a7ed4903ca0390"
+            ]
+        ]
+    },
+    {
+        "id": "b0a7ed4903ca0390",
+        "type": "debug",
+        "z": "05c339ca4c7778d6",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 980,
         "wires": []
     },
     {
@@ -2828,7 +2884,7 @@
         "arg2name": "targetAcceleration",
         "arg2type": "Double",
         "arg2typeid": "",
-        "arg2value": "1",
+        "arg2value": "3",
         "out0name": "strStatus",
         "out0type": "String",
         "out0typeid": "",
