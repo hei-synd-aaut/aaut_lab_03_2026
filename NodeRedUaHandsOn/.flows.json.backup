@@ -11,7 +11,7 @@
         "id": "6cbf8c4120244dc9",
         "type": "tab",
         "label": "Read UA",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -19,7 +19,7 @@
         "id": "22bb27a829b5f023",
         "type": "tab",
         "label": "Subscribe",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -27,7 +27,7 @@
         "id": "86eda314994bb24e",
         "type": "tab",
         "label": "Write",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -35,7 +35,7 @@
         "id": "aace168b2efa4b3d",
         "type": "tab",
         "label": "Method",
-        "disabled": false,
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -2884,7 +2884,7 @@
         "arg2name": "targetAcceleration",
         "arg2type": "Double",
         "arg2typeid": "",
-        "arg2value": "2",
+        "arg2value": "3",
         "out0name": "strStatus",
         "out0type": "String",
         "out0typeid": "",
